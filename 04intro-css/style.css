@@ -43,7 +43,7 @@ nav li.active a {
 }
 
 nav li a:hover {
-    color: #f3efea;
+    color: #CC6692;
 }
 
 /* main stuff here */
@@ -121,7 +121,7 @@ main a:hover {
 
 /* footer stuff here */
 footer {
-    background-color: #f2d5dd;
+    background-color: #8ebcd1;
     text-align: center;
     padding: .5rem 10px;
     margin: 0;
