@@ -1,0 +1,340 @@
+/* Prevent Problems on Different Browsers */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+
+
+
+
+
+/* header stuff here */
+header {
+    background-color: #8ebcd1;
+    padding: 5px 10px;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+
+header span {
+    color: #004C78;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+/* small screen nav */
+@media only screen and (max-width: 600px) {
+
+    nav {
+        border-top: solid 2px #eee;
+        background-color: #f2d5dd;
+    }
+nav li.active a {
+    background-color: #8ebcd1;
+    background-image: linear-gradient(to bottom, #9fc6d3, #f2d5dd);
+    color: #004C78;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
+        color: #004C78;
+        text-decoration: none;
+        border-bottom: solid 2px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+/* end small screens */
+
+
+
+
+
+/* LARGE screen nav */
+@media only screen and (min-width: 601px) {
+
+    nav {
+        border-top: solid 2px #eee;
+        background-color: #f2d5dd;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        text-align: left;
+    }
+
+    nav li {
+        display: inline-block;
+        width: auto;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem 1.25rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #004C78;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+nav li.active a {
+    background-color: #8ebcd1;
+    color: #CC6692;
+}
+
+nav li a:hover {
+    color: #CC6692;
+}
+/* end LARGE screens */
+
+
+
+
+
+
+
+
+
+/* main stuff here */
+main {
+    flex: 1;
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #CC6692;
+}
+
+main h2 {
+    color: #004C78;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+}
+
+.wrapped {
+    float: right;
+    width: 40%;
+    margin: 0 0 1rem 1.5rem;
+    text-align: center;
+}
+
+.wrapped img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapped figcaption {
+    font-size: .85rem;
+    color: #555;
+    margin-top: .5rem;
+}
+
+@media (max-width: 700px) {
+    .wrapped {
+        float: none;
+        width: 100%;
+        margin: 0 auto 1.5rem;
+    }
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #8ebcd1;
+}
+
+main dl dt {
+    color: #004C78;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+main dl dd {
+    color: #333;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #CC6692;
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    background-color: #f2d5dd;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    width: 200px;
+}
+
+main a {
+    color: #CC6692;
+}
+
+main a:hover {
+    color: #CC6692;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+    justify-items: center;
+}
+
+.gallery figure {
+    margin: 0;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+.gallery img:hover  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2.2);
+}
+
+.myForm fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    background-color: #f2d5dd;
+    /* pink background */
+}
+
+.myForm legend {
+    color: #43a0b6;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type="text"],
+.myForm [type="email"],
+.myForm [type="tel"],
+.myForm textarea {
+    display: block;
+}
+
+.myForm [type="text"],
+.myForm [type="email"],
+.myForm [type="tel"],
+.myForm select,
+.myForm textarea {
+    width: 250px;
+    padding: .3rem;
+    border: solid 1px #888;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm [type="submit"] {
+    background-color: #43a0b6;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1rem 0 0 .5vw;
+}
+
+.myForm [type="submit"]:hover {
+    background-color: #2e7c8d;
+}
+
+/* footer stuff here */
+footer {
+    background-color: #8ebcd1;
+    text-align: center;
+    padding: .5rem 10px;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #333;
+    letter-spacing: 2.5px;
+}
+
+@media (min-width: 960px) {
+    .gallery {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
