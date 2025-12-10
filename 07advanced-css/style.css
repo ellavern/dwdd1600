@@ -17,6 +17,9 @@ body {
 header {
     background-color: #8ebcd1;
     padding: 5px 10px;
+     display: flex;
+    align-items: center;
+    gap: .75rem;
 }
 
 header img {
@@ -30,9 +33,6 @@ header span {
     font-weight: 700;
     font-size: 1.6rem;
 }
-
-
-
 
 
 
@@ -92,10 +92,9 @@ nav li.active a {
         text-align: left;
     }
 
-    nav li {
-        display: inline-block;
-        width: auto;
-    }
+   nav ul {
+    display: flex;
+}
 
     nav a {
         display: block;
